@@ -22,6 +22,7 @@ Import-Module OSD -Force
 
 #Start OSDCloud ZTI the RIGHT way
 Write-Host  -ForegroundColor Cyan "Starting OSDCloud, please wait for GUI to load..."
+#Start-OSDCloud -OSLanguage en-us -OSBuild 20H2 -OSEdition Enterprise -ZTI
 Start-OSDCloudGUI
 
 #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
