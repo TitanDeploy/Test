@@ -1,25 +1,3 @@
-<#
-.SYNOPSIS
-Starts the OSDCloud Windows 10 Build Process from the OSD Module or a GitHub Repository
-
-.DESCRIPTION
-Starts the OSDCloud Windows 10 Build Process from the OSD Module or a GitHub Repository
-
-.PARAMETER OSEdition
-Edition of the Windows installation
-
-.PARAMETER OSLanguage
-Language of the Windows installation
-Alias = Culture, Language
-
-.PARAMETER Screenshot
-Captures screenshots during OSDCloud
-
-.LINK
-https://osdcloud.osdeploy.com/
-
-.NOTES
-#>
 function Start-OSDCloud {
     [CmdletBinding(DefaultParameterSetName = 'Default')]
     param (
