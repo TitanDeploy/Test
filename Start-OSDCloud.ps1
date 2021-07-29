@@ -30,6 +30,7 @@ Start-OSDCloudGUI
 #Write-Warning "I'm not sure of what to put here yet"
 
 #Restart from WinPE
-Write-Host  -ForegroundColor Cyan "Restarting in 30 seconds!"
-Start-Sleep -Seconds 30
-wpeutil reboot
+Write-Host  -ForegroundColor Cyan "Please restart the system..."
+#Write-Host  -ForegroundColor Cyan "Restarting in 30 seconds!"
+#Start-Sleep -Seconds 30
+#wpeutil reboot
