@@ -1,4 +1,4 @@
-Write-Host  -ForegroundColor Cyan "Starting SeguraOSD's Custom OSDCloud ..."
+Write-Host  -ForegroundColor Cyan "Starting OSDCloud GUI, please wait..."
 Write-Warning "This will automatically wipe your disk if you continue"
 Start-Sleep -Seconds 10
 
@@ -9,10 +9,10 @@ if ((Get-MyComputerModel) -match 'Virtual') {
 }
 
 #Make sure I have the latest OSD Content
-Write-Host  -ForegroundColor Cyan "Updating the awesome OSD PowerShell Module"
+Write-Host  -ForegroundColor Cyan "Updating the awesome OSD PowerShell Module..."
 Install-Module OSD -Force
 
-Write-Host  -ForegroundColor Cyan "Importing the sweet OSD PowerShell Module"
+Write-Host  -ForegroundColor Cyan "Importing the sweet OSD PowerShell Module..."
 Import-Module OSD -Force
 
 #TODO: Spend the time to write a function to do this and put it here
@@ -31,6 +31,7 @@ Start-OSDCloudGUI
 
 #Restart from WinPE
 Write-Host  -ForegroundColor Cyan "Please restart the system..."
+Write-Warning "Hint: Type 'wpeutil reboot' to restart"
 #Write-Host  -ForegroundColor Cyan "Restarting in 30 seconds!"
 #Start-Sleep -Seconds 30
 #wpeutil reboot
