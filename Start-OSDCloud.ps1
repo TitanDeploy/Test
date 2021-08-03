@@ -30,9 +30,8 @@ Start-OSDCloudGUI
 #Write-Warning "I'm not sure of what to put here yet"
 
 #Restart from WinPE
-Write-Host  -ForegroundColor Cyan "Please restart the system..."
-#Write-Warning "Hint: Type 'wpeutil reboot' to restart"
-Read-Host -Prompt "Press Enter to exit"
-Write-Warning  -ForegroundColor Cyan "Restarting in 5 seconds!"
-Start-Sleep -Seconds 5
+#Write-Host  -ForegroundColor Cyan "Please restart the system..."
+#Read-Host -Prompt "Press Enter to exit"
+Write-Host -ForegroundColor Red "Restarting in 10 seconds!"
+Start-Sleep -Seconds 11
 wpeutil reboot
